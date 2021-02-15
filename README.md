@@ -11,4 +11,11 @@ This what we have done so EasyTravel is working:
  3. `kubectl apply -f Deployments/`
 
 
+## Start EasyTravel (in a namespace...)
+
+
+ 1. `kubectl apply -f ConfigMaps/ --namespace=easytravel`
+ 2. `kubectl apply -f Services/ --namespace=easytravel`
+ 3. `kubectl apply -f Deployments/ --namespace=easytravel`
+
 Access EasyTravel (when running on local machine) under  [http://127.0.0.1:30088/](http://127.0.0.1:30088/)
